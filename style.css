@@ -4,7 +4,8 @@
   --color-bg-accent: #ecdcc0;
   --size: clamp(10rem, 1rem + 40vmin, 30rem);
   --gap: calc(var(--size) / 14);
-  --duration: 60s;
+  --duration: 400s;
+  --duration-icon: 60s;
   --scroll-start: 0;
   --scroll-end: calc(-100% - var(--gap));
 }
@@ -58,7 +59,14 @@ body {
     hsl(0 0% 0% / 0)
   );
 }
-
+.quote {
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: clamp(2.1875rem, 1.7557rem + 2.1589vw, 3.75rem);
+  color: #282828;
+}
 .marquee__group {
   flex-shrink: 0;
   display: flex;
@@ -123,7 +131,7 @@ body {
 }
 
 .rotate {
-  animation: loading var(--duration) linear infinite;
+  animation: loading var(--duration-icon) linear infinite;
 }
 @keyframes loading {
   0% {
@@ -135,7 +143,7 @@ body {
 }
 
 .rotate-back {
-  animation: loading-back var(--duration) linear infinite;
+  animation: loading-back var(--duration-icon) linear infinite;
 }
 @keyframes loading-back {
   0% {
