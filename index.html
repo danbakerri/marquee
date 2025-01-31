@@ -14,11 +14,9 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <!-- partial:index.partial.html -->
-
     <article class="wrapper">
       <div class="marquee">
-        <div class="marquee__group">
+        <div class="marquee__group quick">
           <svg class="rotate">
             <use xlink:href="#chakra-one" />
           </svg>
@@ -39,6 +37,34 @@
           <span class="quote"
             >Who looks outside, dreams; who looks inside, awakes.</span
           >
+        </div>
+        <div aria-hidden="true" class="marquee__group quick">
+          <svg class="rotate">
+            <use xlink:href="#chakra-one" />
+          </svg>
+          <span class="quote"
+            >I am not a product of my circumstances. I am a product of my
+            decisions</span
+          >
+          <svg class="rotate-back">
+            <use xlink:href="#chakra-two" />
+          </svg>
+          <span class="quote"
+            >Optimism is the faith that leads to achievement. Nothing can be
+            done without hope or confidence.</span
+          >
+          <svg class="rotate">
+            <use xlink:href="#chakra-three" />
+          </svg>
+          <span class="quote"
+            >Who looks outside, dreams; who looks inside, awakes.</span
+          >
+        </div>
+      </div>
+    </article>
+    <article class="wrapper">
+      <div class="marquee">
+        <div class="marquee__group">
           <svg class="rotate-back">
             <use xlink:href="#chakra-four" />
           </svg>
@@ -63,26 +89,6 @@
           >
         </div>
         <div aria-hidden="true" class="marquee__group">
-          <svg class="rotate">
-            <use xlink:href="#chakra-one" />
-          </svg>
-          <span class="quote"
-            >I am not a product of my circumstances. I am a product of my
-            decisions</span
-          >
-          <svg class="rotate-back">
-            <use xlink:href="#chakra-two" />
-          </svg>
-          <span class="quote"
-            >Optimism is the faith that leads to achievement. Nothing can be
-            done without hope or confidence.</span
-          >
-          <svg class="rotate">
-            <use xlink:href="#chakra-three" />
-          </svg>
-          <span class="quote"
-            >Who looks outside, dreams; who looks inside, awakes.</span
-          >
           <svg class="rotate-back">
             <use xlink:href="#chakra-four" />
           </svg>
@@ -108,7 +114,6 @@
         </div>
       </div>
     </article>
-
     <svg style="display: none" xmlns="http://www.w3.org/2000/svg">
       <defs>
         <symbol id="chakra-one" viewBox="0 0 407 471">
@@ -168,6 +173,5 @@
         </symbol>
       </defs>
     </svg>
-    <!-- partial -->
   </body>
 </html>

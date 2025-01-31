@@ -1,21 +1,13 @@
 :root {
-  --color-text: navy;
-  --color-bg: papayawhip;
-  --color-bg-accent: #ecdcc0;
+  --color-text: #282828;
   --size: clamp(10rem, 1rem + 40vmin, 30rem);
   --gap: calc(var(--size) / 14);
-  --duration: 400s;
+  --duration: 200s;
+  --duration-quick: 90s;
   --duration-icon: 60s;
   --scroll-start: 0;
   --scroll-end: calc(-100% - var(--gap));
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-text: papayawhip;
-    --color-bg: navy;
-    --color-bg-accent: #2626a0;
-  }
+  --icon-size: clamp(6.25rem, 4.4498rem + 9.0009vw, 12.5rem);
 }
 
 * {
@@ -77,6 +69,10 @@ body {
   -webkit-animation: scroll-x var(--duration) linear infinite;
   animation: scroll-x var(--duration) linear infinite;
 }
+.marquee__group.quick {
+  -webkit-animation: scroll-x var(--duration-quick) linear infinite;
+  animation: scroll-x var(--duration-quick) linear infinite;
+}
 
 @media (prefers-reduced-motion: reduce) {
   .marquee__group {
@@ -111,14 +107,8 @@ body {
 
   aspect-ratio: 1 / 1;
 
-  width: 11em;
-  height: 11em;
-}
-
-.marquee--vertical svg {
-  aspect-ratio: 1;
-  width: calc(var(--size) / 1.5);
-  padding: calc(var(--size) / 6);
+  width: var(--icon-size);
+  height: var(--icon-size);
 }
 
 /* Parent wrapper */
